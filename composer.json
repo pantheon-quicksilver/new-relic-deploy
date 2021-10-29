@@ -1,6 +1,6 @@
 {
   "name": "pantheon-quicksilver/new-relic-deploy",
-  "description": "Set New Relic Apdex T values on Multidev Creation.",
+  "description": "New Relic Deploy Logs.",
   "homepage": "https://github.com/pantheon-quicksilver/new-relic-deploy",
   "type": "quicksilver-script",
   "require": {
