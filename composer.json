@@ -1,0 +1,26 @@
+{
+  "name": "pantheon-quicksilver/new-relic-deploy",
+  "description": "Set New Relic Apdex T values on Multidev Creation.",
+  "homepage": "https://github.com/pantheon-quicksilver/new-relic-deploy",
+  "type": "quicksilver-script",
+  "require": {
+    "composer/installers": "~1.0"
+  },
+  "license": "MIT",
+  "extra": {
+    "pantheon-quicksilver": {
+      "new-relic-deploy": [
+        {
+          "wf_type": "deploy",
+          "stage": "after",
+          "script": "new-relic-deploy.php"
+        },
+        {
+          "wf_type": "sync_code",
+          "stage": "after",
+          "script": "new-relic-deploy.php"
+        }
+      ]
+    }
+  }
+}
